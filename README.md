@@ -13,8 +13,9 @@ Each section is drawn with a different color based on a state.
 Add an animation that smoothly collapses/expands sections when the chart’s data changes.
 (*Extra) Add the effect of the border appearing around the section as a reaction to the click on that section.
 3 files
-
-
+![Video 1](https://github.com/IvanChernukhin/pdp/blob/master/Screen%20Recording%202024-08-09%20at%2011.23.18.mov)
+![Video 2](https://github.com/IvanChernukhin/pdp/blob/master/Screen%20Recording%202024-08-09%20at%2011.47.50.mov)
+![Image 1](https://github.com/IvanChernukhin/pdp/blob/master/image%20(2).png)
 
 Side Effects
 What side effect functions and how exactly can be used in these cases (if more than 1 applies please list all that comes to mind, if necessary - describing in words the whole solution up to view model):
