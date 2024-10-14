@@ -38,8 +38,13 @@ data class PieChartSection(
     val color: Color
 )
 
+
+
 @Composable
 fun PieChartInstance(onUserInteraction: () -> Unit) {
+    var recompositionCount by remember { mutableIntStateOf(0) }
+    recompositionCount++
+
     val initialSections = listOf(
         PieChartSection(30f, Color.Red),
         PieChartSection(70f, Color.Blue),
@@ -47,12 +52,6 @@ fun PieChartInstance(onUserInteraction: () -> Unit) {
         PieChartSection(40f, Color.Yellow)
     )
     var sections by remember { mutableStateOf(initialSections) }
-    var recompositionCount by remember { mutableIntStateOf(0) }
-
-
-    LaunchedEffect(sections) {
-        recompositionCount++
-    }
 
     Column(
         modifier = Modifier

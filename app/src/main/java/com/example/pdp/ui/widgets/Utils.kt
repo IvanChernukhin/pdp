@@ -1,7 +1,6 @@
 package com.example.pdp.ui.widgets
 
 import android.graphics.Rect
-import android.util.Log
 import android.view.ViewTreeObserver
 import androidx.compose.foundation.clickable
 import androidx.compose.runtime.Composable
@@ -10,8 +9,6 @@ import androidx.compose.runtime.State
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
-
-import androidx.compose.ui.input.pointer.pointerInput
 import androidx.compose.ui.platform.LocalView
 
 enum class Keyboard {
